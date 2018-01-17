@@ -1,20 +1,20 @@
 language: node_js
- node_js: node
- cache:
-   directories:
-     - node_modules
- script:
-   - npm test
- env:
-   - CI=true
+node_js: node
+cache:
+  directories:
+    - node_modules
+script:
+  - npm test
+env:
+  - CI=true
 
- before_deploy:
-   - npm install netlify-cli -g
-   - npm run build
+before_deploy:
+  - npm install netlify-cli -g
+  - npm run build
 
- deploy:
-   provider: script
-   script: netlify deploy -s $clever-chandrasekhar-5a0660 -t $53943417ef969475bd3b08ce95d3229972cec78cad93ee2dfcb4cd85df8f015c -p ./build
-   skip_cleanup: true
-   on:
-     branch: master
+deploy:
+  provider: script
+  script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p ./build
+  skip_cleanup: true
+  on:
+    branch: master
