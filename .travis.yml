@@ -14,7 +14,7 @@ language: node_js
 
  deploy:
    provider: script
-   script: netlify deploy -s clever-chandrasekhar-5a0660 -t ddcee3b0-9e8a-47e6-85a2-95eee34d0608 -p ./build
+   script: netlify deploy -s $clever-chandrasekhar-5a0660 -t $53943417ef969475bd3b08ce95d3229972cec78cad93ee2dfcb4cd85df8f015c -p ./build
    skip_cleanup: true
    on:
      branch: master
