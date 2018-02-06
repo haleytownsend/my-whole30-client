@@ -2,7 +2,8 @@ import React from 'react';
 
 import Header from './header';
 import SectionInfo from './sectionInfo';
-import SectionDayByDay from './sectionDayByDay';
+import Recipes from './recipes';
+import FavoriteRecipes from './favoriteRecipes';
 import SignUpForm from './signUpForm';
 
 export default function LandingPage() {
@@ -11,7 +12,8 @@ export default function LandingPage() {
       <Header />
       <main role="main">
         <SectionInfo />
-        <SectionDayByDay />
+        <Recipes />
+        <FavoriteRecipes />
         <SignUpForm />
       </main>
     </div>

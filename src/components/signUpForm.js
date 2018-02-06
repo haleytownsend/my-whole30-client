@@ -4,7 +4,7 @@ import './signUpForm.css';
 
 export default function SignUpForm(props) {
   return (
-    <form>
+    <form className="signUp">
       <h3>'Sign Up Here'</h3>
       <p>Form goes here...</p>
       <button>Submit Button </button>

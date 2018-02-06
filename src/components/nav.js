@@ -4,7 +4,7 @@ import './nav.css';
 
 export default function Nav(props) {
   return (
-    <nav role="navigation">
+    <nav className="nav">
       {props.text}
     </nav>
   );
