@@ -9,5 +9,3 @@ ReactDOM.render(
   <LandingPage />,
   document.getElementById('root')
 );
-
-console.log("testing")
