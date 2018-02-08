@@ -7,7 +7,7 @@ export default function SignUpForm(props) {
     <form className="signUp">
       <h3>'Sign Up Here'</h3>
       <p>Form goes here...</p>
-      <button>Submit Button </button>
+      <button id="submitBtn">Submit Button </button>
     </form>
   );
 }

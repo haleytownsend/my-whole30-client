@@ -13,8 +13,8 @@ router.get('/', (req, res) => {
 //GET by ID
 router.get('/:id', (req, res) => {
   User.findById(req.params['id']).exec()
-  .then(user => {res.status(200).json(user).end())
-  .catch(message => {res.status(404).json({ error: true, message }).end()})
+  .then(user => res.status(200).json(user).end())
+  .catch(message => res.status(404).json({ error: true, message }).end())
 })
 
 

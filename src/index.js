@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import './index.css';
-
 import LandingPage from './components/landingPage';
+import './index.css';
 
 ReactDOM.render(
   <LandingPage />,

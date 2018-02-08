@@ -8,7 +8,7 @@ import SignUpForm from './signUpForm';
 
 export default function LandingPage() {
   return (
-    <div>
+    <div id="root">
       <Header />
       <main role="main">
         <SectionInfo />
